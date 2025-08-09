@@ -42,7 +42,9 @@ Optimizer: Adam with learning rate 1e-4.
 
 # Results
 After using VGG16
+
 Final Training Accuracy: 96.04%
+
 Final Validation Accuracy: 84.31%
 
 <img width="971" height="404" alt="image" src="https://github.com/user-attachments/assets/5a65e744-ddab-465d-96fe-8fe9f57baa65" />
