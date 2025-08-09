@@ -50,7 +50,8 @@ Final Validation Accuracy: 80.00%
 
 
 
-<img width="969" height="364" alt="image" src="https://github.com/user-attachments/assets/262980c2-0ac2-4737-8269-08f0089afd1e" />
+<img width="971" height="358" alt="image" src="https://github.com/user-attachments/assets/6241f4e1-697d-46c1-81d7-c0b2df167164" />
+
 
 # Summary 
 -The CNN successfully distinguishes between tumorous and non-tumorous MRI scans.
