@@ -7,7 +7,7 @@
 
 # Dataset
 Data: [Brain MRI Images for Brain Tumor Detection — Kaggle](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection)
-, due to the small amount of data - tumorous (355) and non tumorous (229)- and to avoid overfitting I used Data augmentation with Total number of samples: 2065, Positive samples: 1085 (52.54%), Negative samples: 980 (47.46%), to create synthetic images with 
+, due to the small amount of data - tumorous (156) and non tumorous (98)- and to avoid overfitting I used Data augmentation with Total number of samples: 2065, Positive samples: 1085 (52.54%), Negative samples: 980 (47.46%), to create synthetic images with 
 -Rotation
 -Horizontal/vertical flips
 -Width/height shifts
