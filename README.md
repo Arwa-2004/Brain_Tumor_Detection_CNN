@@ -53,6 +53,25 @@ Final Validation Accuracy: 80.00%
 <img width="971" height="358" alt="image" src="https://github.com/user-attachments/assets/6241f4e1-697d-46c1-81d7-c0b2df167164" />
 
 
+# Understanding CNNs in Brain Tumor Detection
+Convolutional Neural Networks (CNNs) are a class of deep learning models particularly well-suited for image analysis. Unlike traditional neural networks, CNNs automatically learn spatial hierarchies of features through layers of convolutional filters.
+
+## Key components used in this project:
+
+Convolutional Layers: These layers apply multiple filters (kernels) that scan across the input image to detect important local features such as edges, textures, or shapes. Early layers capture simple features, while deeper layers learn more complex patterns related to tumors.
+
+Pooling Layers (MaxPooling): These reduce the spatial dimensions of feature maps, helping to lower computational cost and making the model more robust to slight image translations.
+
+Activation Functions (ReLU): Non-linear activations like ReLU introduce the ability for the model to learn complex mappings from inputs to outputs.
+
+Fully Connected (Dense) Layers: After feature extraction, these layers combine features to perform classification, deciding whether an MRI scan is tumorous or non-tumorous.
+
+Dropout Layers: Used to prevent overfitting by randomly disabling neurons during training, which encourages the model to generalize better.
+
+## Transfer Learning with VGG16:
+
+VGG16 is a pretrained CNN with 16 layers trained on millions of images (ImageNet). By using its convolutional base, we leverage previously learned general image features and adapt them to our MRI data through a new classification head. This technique is highly effective when working with small datasets.
+
 # Summary 
 -The CNN successfully distinguishes between tumorous and non-tumorous MRI scans.
 
