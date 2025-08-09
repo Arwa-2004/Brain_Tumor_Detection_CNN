@@ -7,7 +7,7 @@
 
 # Dataset
 Data: [Brain MRI Images for Brain Tumor Detection — Kaggle](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection)
-, due to the small amount of data - tumorous (156) and non tumorous (98)- and to avoid overfitting I used Data augmentation with Total number of samples: 2065, Positive samples: 1085 (52.54%), Negative samples: 980 (47.46%), to create synthetic images with 
+, due to the small amount of data - tumorous (156) and non tumorous (98)- and to avoid overfitting I used Data augmentation with Total number of samples: 2064, Positive samples: 1085 (52.54%), Negative samples: 979 (47.46%), to create synthetic images with 
 -Rotation
 -Horizontal/vertical flips
 -Width/height shifts
@@ -30,8 +30,7 @@ Dense Layers:
 Final layer: 1 neuron (sigmoid) for binary classification.
 Loss Function: Binary Crossentropy.
 Optimizer: Adam.
-However, the Final Training Accuracy was 80%
-So to increase the accuracy I used
+
 2. Transfer Learning with VGG16 in which:
 Base model: VGG16 (pre-trained on ImageNet).
 Converts grayscale MRI to RGB for VGG16 input.
@@ -43,9 +42,9 @@ Optimizer: Adam with learning rate 1e-4.
 # Results
 After using VGG16
 
-Final Training Accuracy: 96.04%
+Final Training Accuracy: 81.28%
 
-Final Validation Accuracy: 84.31%
+Final Validation Accuracy: 80.00%
 
 <img width="971" height="404" alt="image" src="https://github.com/user-attachments/assets/5a65e744-ddab-465d-96fe-8fe9f57baa65" />
 
