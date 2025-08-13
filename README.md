@@ -25,8 +25,10 @@ Two approaches are implemented:
 
 1. I used a custom CNN model Conv2D + MaxPooling2D layers:
 32 filters → 64 filters → 128 filters.
+
 Dense Layers:
 128 neurons (ReLU activation) + Dropout (0.5) to prevent overfitting.
+
 Final layer: 1 neuron (sigmoid) for binary classification.
 Loss Function: Binary Crossentropy.
 Optimizer: Adam.
@@ -34,8 +36,11 @@ Optimizer: Adam.
 2. Transfer Learning with VGG16 in which:
 Base model: VGG16 (pre-trained on ImageNet).
 Converts grayscale MRI to RGB for VGG16 input.
+
 Freezes convolutional layers to preserve pre-trained weights.
+
 Adds a Flatten → Dense(128) → Dropout → Dense(1, sigmoid) head.
+
 Loss Function: Binary Crossentropy.
 Optimizer: Adam with learning rate 1e-4.
 
